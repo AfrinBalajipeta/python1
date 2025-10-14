@@ -1,0 +1,8 @@
+import numpy as np
+matrix=np.array([[1,2,3],[4,5,6]])
+print("Matrix:")
+print(matrix)
+print("Element at [1][2]:",matrix[1][2])
+print("Shape:",matrix.shape)
+print("Transpose:")
+print(matrix.T)
