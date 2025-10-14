@@ -1,0 +1,12 @@
+import pandas as pd
+data={
+    "Name":["Alice","Bob","Clara"],
+    "Age":[22,23,21],
+    "Department":["CSE","ECE","IT"],
+    "Marks":[85,78,92]
+}
+df=pd.DataFrame(data)
+print("Student Data")
+print(df)
+average=df["Marks"].mean()
+print("\nAverage Marks:",average)
