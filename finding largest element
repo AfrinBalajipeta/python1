@@ -1,0 +1,9 @@
+def find_largest(lst):
+  max_num = lst[0]
+  for num in lst:
+    if num > max_num:
+      max_num = num
+  return max_num
+numbers = [45,87,23,67,91,12]
+      print("The largest number is:",
+            find_largest(numbers))
