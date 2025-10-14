@@ -1,0 +1,8 @@
+a, b = 0, 1
+  for i in range(3, n + 1)
+  c = a + b
+  a = b
+  b = c
+return b
+n = 7
+print(f"The {n}th Fibonacci numbers is:", fibonacci(n))
