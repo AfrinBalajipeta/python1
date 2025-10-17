@@ -1,0 +1,8 @@
+class Student:
+  def __init__(self, name):
+    self.name = name
+    print(f"student {self.name} object created.")
+  def __del__(self):
+    print(f"Student {self.name} object destroyed.")
+s1 = Student("Jyothi")
+del s1
