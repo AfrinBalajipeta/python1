@@ -1,0 +1,18 @@
+import pandas as pd
+import numpy as np
+data = {
+ "name": ["A", "B", "C", "D"],
+ "score": [10, 20, 30, 40],
+ "age": [15, 16, 17, 18]
+}
+df = pd.DataFrame(data, index=["a", "b", "c", "d"])
+print("\nSelecting 'score' column:")
+print(df["score"])
+print("\nSelecting 'name' and 'age' columns:")
+print(df[["name", "age"]])
+print("\nSelect row 'c' using loc:")
+print(df.loc["c"])
+print("\nSelect row at index 2 using iloc:")
+print(df.iloc[2])
+print("\nSelect score of 'd':")
+print(df.loc["d", "score"])
