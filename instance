@@ -1,0 +1,34 @@
+class Animal:
+    def _init_(self, name):
+        self.name = name
+    def speak(self):
+        return "Some generic animal sound"
+    def info(self):
+        return f"I am an animal named {self.name}"
+class Dog(Animal):
+    def speak(self):
+        return "Woof! Woof!"
+    def fetch(self):
+        return f"{self.name} is fetching the ball!"
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+    def scratch(self):
+        return f"{self.name} is scratching the furniture!"
+class Bird(Animal):
+    def speak(self):
+        return "Chirp! Chirp!"
+    def fly(self):
+        return f"{self.name} is flying in the sky!"
+if _name_ == "_main_":
+    animals = [Dog("Buddy"), Cat("Whiskers"), Bird("Tweety")]
+    for animal in animals:
+        print(animal.info())
+        print("Sound:", animal.speak())
+        if isinstance(animal, Dog):
+            print(animal.fetch())
+        elif isinstance(animal, Cat):
+            print(animal.scratch())
+        elif isinstance(animal, Bird):
+            print(animal.fly())
+      print("-" * 40)
