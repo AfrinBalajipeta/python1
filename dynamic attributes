@@ -1,0 +1,9 @@
+class Student:
+    def __init__(self, name):
+        self.name = name
+s1 = Student("aditya")
+s1.age = 22
+s1.course = "M.Tech"
+print(s1.name)    # from class
+print(s1.age)     # dynamic attribute
+print(s1.course)  # dynamic attribute
