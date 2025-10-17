@@ -1,0 +1,8 @@
+class Car:
+  def__init__(self,brand,model):
+    self.brand = brand
+    self.model = model
+  def show(self):
+    print(f"Car:{self.brand} {self.model}")
+car1 = Car("Toyota","Camry")
+car1.show()
