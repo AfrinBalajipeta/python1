@@ -1,0 +1,8 @@
+import pandas as pd
+data = [10,20,30,40]
+series=pd.Series(data)
+print("data is:")
+print(series)
+list_data=series.tolist()
+print("Python list:",list_data)
+print("Type of list_data:",type(list_data))
