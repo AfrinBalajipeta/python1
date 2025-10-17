@@ -1,0 +1,11 @@
+data = []
+with open("students.csv", "r") as file:
+  for line in file:
+    fields = line.strip().split(",")
+    data.append(fields)
+for row in data:
+  print(row)
+Name,Age,Marks
+Ravi,20,85
+Sita,21,90
+Amit,19,75
