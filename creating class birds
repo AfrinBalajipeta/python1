@@ -1,0 +1,18 @@
+class birds:
+  def sound():
+    print("Birds can humm")
+class Parrot(birds):
+  def sound():
+    print("Parrots make sound kech kech")
+class sparrow(birds):
+  def sound():
+    print("sparrow makes sound ich ich")
+class Eagle(birds):
+  def sound():
+    print("Eagles make sound eww eww")
+p=Parrot
+s=sparrow
+e=Eagle
+p.sound()
+s.sound()
+e.sound()
